@@ -93,8 +93,23 @@ contains('Pencil', items, function(item) {
 
 /* STRETCH PROBLEM */
 
+let duplicateArray = ['Steak', 'Potatoes', 'Broccolli', 'Carrots', 'Steak', 'Potatoes'];
+
 function removeDuplicates(array, cb) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === array[i]) 
+    return cb;
+  };
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+let duplicateFree = [];
+
+console.log(removeDuplicates(duplicateArray, function(index) {
+  if (duplicateArray[i] === duplicateArray[i])
+  console.log(duplicateFree.push(index));
+}));
+
+console.log(duplicateFree);
